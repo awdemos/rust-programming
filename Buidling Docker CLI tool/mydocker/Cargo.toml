@@ -1,0 +1,10 @@
+[package]
+name = "mydocker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bollard = "0.18.1"                        # For Docker API integration
+clap = { version = "4.5.21", features = ["derive"] } # For building the CLI
+tokio = { version = "1.41.1", features = ["full"] }  # Asynchronous runtime
+futures-util = "0.3"                      # Utilities for async programming
