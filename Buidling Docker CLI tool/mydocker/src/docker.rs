@@ -11,7 +11,7 @@ pub struct DockerClient {
 impl DockerClient {
     pub fn new() -> Self {
         let docker = Docker::connect_with_unix(
-            "/Users/priyadav/.docker/run/docker.sock",
+            "~/.docker/run/docker.sock",
             120, // Timeout in seconds
             bollard::API_DEFAULT_VERSION,
         )
